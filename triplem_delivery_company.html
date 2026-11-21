@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#10233f">
+  <meta name="description" content="TRIPLEM DELIVERY COMPANY — dependable delivery, logistics and shipment tracking.">
+  <title>TRIPLEM DELIVERY COMPANY | Delivering with Care</title>
+  <style>
+    :root{--navy:#10233f;--blue:#1769aa;--cyan:#25b7c8;--gold:#ffbd59;--ink:#17243a;--muted:#64748b;--paper:#f5f8fc;--white:#fff;--line:#e4eaf2;--shadow:0 18px 55px rgba(16,35,63,.12)}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;color:var(--ink);background:#fff;line-height:1.6}a{color:inherit;text-decoration:none}button,input,textarea,select{font:inherit}.container{width:min(1160px,92%);margin:auto}.topbar{background:#0a1930;color:#dbe7f5;font-size:.88rem;padding:9px 0}.topbar .container{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}.topbar a{color:#fff}.navbar{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.96);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}.nav-inner{height:76px;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{display:flex;align-items:center;gap:11px;font-weight:900;letter-spacing:.03em;color:var(--navy);line-height:1.1}.brand-mark{width:43px;height:43px;border-radius:13px;background:linear-gradient(135deg,var(--blue),var(--cyan));display:grid;place-items:center;color:white;font-size:1.05rem;box-shadow:0 8px 20px #1769aa40}.brand small{display:block;color:var(--muted);font-size:.65rem;letter-spacing:.18em;margin-top:4px}.nav-links{display:flex;align-items:center;gap:27px;font-size:.93rem;font-weight:650}.nav-links a:hover{color:var(--blue)}.menu-btn{display:none;border:0;background:var(--paper);border-radius:10px;padding:10px 13px;color:var(--navy);font-size:1.2rem}
+    .hero{position:relative;min-height:650px;display:flex;align-items:center;color:#fff;background:linear-gradient(90deg,rgba(7,21,42,.94) 0%,rgba(7,21,42,.78) 47%,rgba(7,21,42,.18) 100%),url('https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=2000&q=85') center/cover no-repeat}.hero:after{content:"";position:absolute;inset:auto 0 0;height:100px;background:linear-gradient(transparent,#fff)}.hero-content{position:relative;z-index:1;max-width:700px;padding:95px 0 125px}.eyebrow{display:inline-flex;align-items:center;gap:9px;color:#b9f2f4;font-size:.78rem;font-weight:800;letter-spacing:.17em;text-transform:uppercase}.eyebrow:before{content:"";width:28px;height:2px;background:var(--gold)}h1{font-size:clamp(2.7rem,6vw,5.3rem);line-height:1.02;letter-spacing:-.045em;margin:22px 0}.hero p{font-size:1.12rem;color:#e0eaf5;max-width:570px}.hero-actions{display:flex;gap:13px;flex-wrap:wrap;margin-top:30px}.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;border:0;border-radius:10px;padding:13px 21px;font-weight:800;cursor:pointer;transition:.2s}.btn:hover{transform:translateY(-2px)}.btn-primary{background:var(--gold);color:#18243a}.btn-light{background:#ffffff18;color:#fff;border:1px solid #ffffff75}.btn-blue{background:var(--blue);color:#fff}.btn-outline{background:#fff;color:var(--navy);border:1px solid var(--line)}.trust-row{display:flex;gap:25px;flex-wrap:wrap;margin-top:38px;color:#eaf3fb;font-size:.9rem}.trust-row span:before{content:"✓";color:var(--gold);font-weight:900;margin-right:8px}
+    .track-wrap{position:relative;z-index:3;margin-top:-74px}.track-card{background:#fff;border-radius:18px;padding:27px 30px;box-shadow:var(--shadow);border:1px solid #edf1f6}.track-head{display:flex;justify-content:space-between;align-items:center;gap:15px;flex-wrap:wrap}.track-head h2{margin:0;color:var(--navy);font-size:1.35rem}.track-head p{margin:4px 0 0;color:var(--muted);font-size:.9rem}.track-form{display:flex;gap:12px;margin-top:19px}.track-form input{flex:1;min-width:0;padding:15px 16px;border:1px solid #dbe3ed;border-radius:10px;outline:none}.track-form input:focus,.field input:focus,.field textarea:focus,.field select:focus{border-color:var(--blue);box-shadow:0 0 0 3px #1769aa18}.track-result{margin-top:18px}.result-box{background:#f5f9fd;border:1px solid #dce9f5;border-radius:12px;padding:18px}.result-top{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}.status{display:inline-block;padding:5px 11px;border-radius:30px;background:#e4f7ed;color:#167344;font-size:.78rem;font-weight:800}.timeline{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:22px}.step{border-top:3px solid #d9e2ed;padding-top:9px;color:#8190a3;font-size:.8rem}.step.done{border-color:var(--cyan);color:var(--navy);font-weight:750}
+    section{padding:88px 0}.section-head{text-align:center;max-width:680px;margin:0 auto 42px}.section-head .eyebrow{color:var(--blue)}.section-head h2{font-size:clamp(2rem,4vw,3rem);line-height:1.12;color:var(--navy);letter-spacing:-.035em;margin:13px 0}.section-head p{color:var(--muted);margin:0}.services{background:var(--paper);margin-top:65px}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}.service-card{background:#fff;border:1px solid var(--line);border-radius:16px;overflow:hidden;box-shadow:0 8px 28px #10233f08;transition:.25s}.service-card:hover{transform:translateY(-5px);box-shadow:var(--shadow)}.service-card img{width:100%;height:205px;object-fit:cover;display:block}.service-body{padding:22px}.service-icon{width:43px;height:43px;border-radius:12px;background:#e9f7fa;color:var(--blue);display:grid;place-items:center;font-size:1.25rem;margin-top:-44px;position:relative;border:4px solid #fff}.service-body h3{color:var(--navy);margin:14px 0 7px}.service-body p{color:var(--muted);font-size:.94rem;margin:0}
+    .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}.about-photo{position:relative}.about-photo img{width:100%;height:470px;object-fit:cover;border-radius:18px}.photo-note{position:absolute;right:-18px;bottom:25px;background:var(--gold);padding:18px 22px;border-radius:13px;font-weight:900;color:var(--navy);box-shadow:var(--shadow)}.about-copy .eyebrow{color:var(--blue)}.about-copy h2{font-size:clamp(2rem,4vw,3rem);line-height:1.1;color:var(--navy);margin:14px 0}.about-copy p{color:var(--muted)}.checks{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:24px 0}.checks span{font-weight:700;color:var(--navy)}.checks span:before{content:"✓";color:#11a2a9;margin-right:9px}
+    .stats{background:var(--navy);color:#fff;padding:48px 0}.stats-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;text-align:center}.stat strong{display:block;font-size:2.1rem;color:var(--gold)}.stat span{color:#c4d2e2;font-size:.9rem}
+    .process{background:var(--paper)}.process-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.process-item{background:#fff;border:1px solid var(--line);padding:26px;border-radius:15px}.number{width:40px;height:40px;border-radius:50%;display:grid;place-items:center;background:var(--navy);color:#fff;font-weight:900}.process-item h3{color:var(--navy);margin:17px 0 7px}.process-item p{color:var(--muted);margin:0}
+    .contact-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:45px}.contact-info{background:var(--navy);color:#fff;padding:34px;border-radius:18px}.contact-info h2{font-size:2rem;line-height:1.15;margin:0 0 12px}.contact-info p{color:#c4d2e2}.contact-line{display:flex;gap:13px;margin:25px 0}.contact-line b{display:block;color:#fff}.contact-line span{color:#c4d2e2;font-size:.92rem;overflow-wrap:anywhere}.contact-form{display:grid;grid-template-columns:1fr 1fr;gap:16px}.field{display:flex;flex-direction:column;gap:7px}.field.full{grid-column:1/-1}.field label{font-weight:750;font-size:.9rem;color:var(--navy)}.field input,.field textarea,.field select{width:100%;padding:13px 14px;border:1px solid #dbe3ed;border-radius:9px;outline:none;background:#fff}.field textarea{min-height:125px;resize:vertical}.fineprint{font-size:.78rem;color:var(--muted);grid-column:1/-1}
+    .cta{padding:65px 0;background:linear-gradient(110deg,#0e294c,#1769aa);color:#fff;text-align:center}.cta h2{font-size:clamp(2rem,4vw,3rem);margin:0 0 10px}.cta p{color:#d7e6f5;margin:0 0 24px}.faq{max-width:800px;margin:auto}.faq details{border-bottom:1px solid var(--line);padding:18px 3px}.faq summary{font-weight:800;color:var(--navy);cursor:pointer}.faq details p{color:var(--muted);margin-bottom:0}
+    footer{background:#09182d;color:#c4d2e2;padding:40px 0 20px}.footer-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:35px}.footer-grid h3{color:#fff;margin-top:0}.footer-grid a{display:block;margin:8px 0;color:#c4d2e2}.footer-bottom{border-top:1px solid #ffffff20;margin-top:30px;padding-top:18px;font-size:.85rem;display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}.whatsapp{position:fixed;right:20px;bottom:20px;z-index:30;width:58px;height:58px;border-radius:50%;display:grid;place-items:center;background:#20c56b;color:white;font-size:1.65rem;box-shadow:0 8px 25px #0003}.notice{font-size:.82rem;color:#7a5b20;background:#fff8e9;border:1px solid #f4dfb4;border-radius:9px;padding:11px 13px;margin-top:15px}
+    @media(max-width:850px){.nav-links{display:none;position:absolute;top:76px;left:0;right:0;background:white;padding:20px 5%;border-bottom:1px solid var(--line);flex-direction:column;align-items:flex-start;gap:17px}.nav-links.open{display:flex}.menu-btn{display:block}.cards{grid-template-columns:repeat(2,1fr)}.about-grid,.contact-grid{grid-template-columns:1fr;gap:35px}.about-photo img{height:390px}.photo-note{right:10px}.footer-grid{grid-template-columns:1fr 1fr}}
+    @media(max-width:580px){.hero{min-height:620px;background-position:58% center}.hero-content{padding:75px 0 115px}.track-card{padding:22px 18px}.track-form{flex-direction:column}.track-form .btn{width:100%}.cards,.process-grid,.stats-grid{grid-template-columns:1fr 1fr}.service-card img{height:165px}.checks{grid-template-columns:1fr}.contact-form{grid-template-columns:1fr}.field.full,.fineprint{grid-column:auto}.footer-grid{grid-template-columns:1fr}.stats-grid{row-gap:27px}.timeline{grid-template-columns:1fr 1fr}.topbar .container{justify-content:center;text-align:center}}
+  </style>
+</head>
+<body>
+  <div class="topbar"><div class="container"><span>Reliable delivery. Clear communication. Every step.</span><span><a href="mailto:triplem0147@gmail.com">triplem0147@gmail.com</a> &nbsp;|&nbsp; <a href="tel:+447883316371">+44 7883 316371</a></span></div></div>
+  <header class="navbar"><div class="container nav-inner">
+    <a class="brand" href="#home"><span class="brand-mark">TMD</span><span>TRIPLEM DELIVERY<small>COMPANY</small></span></a>
+    <nav class="nav-links" id="navLinks"><a href="#home">Home</a><a href="#services">Services</a><a href="#about">About us</a><a href="#how">How it works</a><a href="#contact">Contact</a><a href="#track" class="btn btn-blue">Track shipment</a></nav>
+    <button class="menu-btn" id="menuBtn" aria-label="Open navigation" aria-expanded="false">☰</button>
+  </div></header>
+
+  <main>
+    <section class="hero" id="home"><div class="container"><div class="hero-content">
+      <span class="eyebrow">Moving what matters</span>
+      <h1>Your delivery.<br>Our commitment.</h1>
+      <p>From pickup to destination, TRIPLEM DELIVERY COMPANY makes sending and receiving packages simple, dependable and stress-free.</p>
+      <div class="hero-actions"><a class="btn btn-primary" href="#track">Track a package →</a><a class="btn btn-light" href="#contact">Request a delivery</a></div>
+      <div class="trust-row"><span>Careful handling</span><span>Helpful support</span><span>Shipment updates</span></div>
+    </div></div></section>
+
+    <div class="container track-wrap" id="track"><div class="track-card">
+      <div class="track-head"><div><h2>Track your shipment</h2><p>Enter the tracking number provided by TRIPLEM DELIVERY COMPANY.</p></div><span class="eyebrow" style="color:var(--blue)">Shipment tracking</span></div>
+      <form class="track-form" id="trackForm"><input id="trackingInput" type="text" placeholder="e.g. TMD-2026-ABC123" aria-label="Tracking number" required><button class="btn btn-blue" type="submit">Track package →</button></form>
+      <div class="track-result" id="trackResult" aria-live="polite"></div>
+      <div class="notice">Tracking demo: this one-file website stores sample shipment records in this browser only. Connect a secure database and staff dashboard before using it for real customer shipments.</div>
+    </div></div>
+
+    <section class="services" id="services"><div class="container"><div class="section-head"><span class="eyebrow">What we do</span><h2>Delivery solutions that keep you moving</h2><p>Flexible logistics support for individuals and businesses. Contact our team to confirm available routes, delivery times and service coverage.</p></div>
+      <div class="cards">
+        <article class="service-card"><img src="https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?auto=format&fit=crop&w=900&q=80" alt="Delivery truck on the road"><div class="service-body"><div class="service-icon">🚚</div><h3>Door-to-door delivery</h3><p>Convenient collection and delivery for parcels, documents and business orders.</p></div></article>
+        <article class="service-card"><img src="https://images.unsplash.com/photo-1580674285054-bed31e145f59?auto=format&fit=crop&w=900&q=80" alt="Worker sorting parcels in a warehouse"><div class="service-body"><div class="service-icon">📦</div><h3>Parcel handling</h3><p>Organised package handling with care from the point of collection to dispatch.</p></div></article>
+        <article class="service-card"><img src="https://images.unsplash.com/photo-1553413077-190dd305871c?auto=format&fit=crop&w=900&q=80" alt="Logistics warehouse and delivery operations"><div class="service-body"><div class="service-icon">🌍</div><h3>Business logistics</h3><p>Practical delivery support for shops, growing businesses and regular senders.</p></div></article>
+      </div>
+    </div></section>
+
+    <section id="about"><div class="container about-grid"><div class="about-photo"><img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&w=1000&q=85" alt="Professional logistics team working together"><div class="photo-note">Your parcel matters to us.</div></div><div class="about-copy"><span class="eyebrow">About TripleM</span><h2>People, packages and dependable service.</h2><p>TRIPLEM DELIVERY COMPANY is focused on making delivery straightforward. We believe customers deserve clear communication, careful handling and a simple way to ask questions about their shipments.</p><p>Whether you are sending an important document or coordinating business deliveries, our team is here to help you plan the next step.</p><div class="checks"><span>Friendly customer support</span><span>Shipment reference numbers</span><span>Careful parcel handling</span><span>Convenient enquiries</span></div><a href="#contact" class="btn btn-blue">Talk to our team</a></div></div></section>
+
+    <div class="stats"><div class="container stats-grid"><div class="stat"><strong>01</strong><span>Customer-first service</span></div><div class="stat"><strong>24/7</strong><span>Online enquiry access</span></div><div class="stat"><strong>100%</strong><span>Care in every handoff</span></div><div class="stat"><strong>1 team</strong><span>Here to help you</span></div></div></div>
+
+    <section class="process" id="how"><div class="container"><div class="section-head"><span class="eyebrow">Simple process</span><h2>How delivery works</h2><p>Three straightforward steps to get your shipment moving.</p></div><div class="process-grid">
+      <article class="process-item"><div class="number">1</div><h3>Contact our team</h3><p>Share your pickup details, destination, parcel description and preferred delivery date.</p></article>
+      <article class="process-item"><div class="number">2</div><h3>Receive your reference</h3><p>Once the shipment is accepted, our team can issue a unique tracking reference for it.</p></article>
+      <article class="process-item"><div class="number">3</div><h3>Follow your shipment</h3><p>Use your reference number on this page to view the latest tracking information entered by our team.</p></article>
+    </div></div></section>
+
+    <section id="contact"><div class="container contact-grid"><div class="contact-info"><span class="eyebrow">Get in touch</span><h2>Let's get your delivery moving.</h2><p>Have a question, need a quote or want to arrange a pickup? Contact us using the details below.</p>
+      <div class="contact-line"><div>✉️</div><div><b>Email</b><span>triplem0147@gmail.com</span></div></div>
+      <div class="contact-line"><div>💬</div><div><b>WhatsApp / Phone</b><span>+44 7883 316371</span></div></div>
+      <div class="contact-line"><div>📍</div><div><b>Address</b><span>No 1234 at New York, United States</span></div></div>
+      <a class="btn btn-primary" href="https://wa.me/447883316371" target="_blank" rel="noopener">Message us on WhatsApp</a>
+    </div>
+    <form class="contact-form" id="contactForm">
+      <div class="field"><label for="name">Your name</label><input id="name" name="name" required placeholder="Full name"></div>
+      <div class="field"><label for="phone">Phone number</label><input id="phone" name="phone" required placeholder="Your contact number"></div>
+      <div class="field full"><label for="email">Email address</label><input id="email" name="email" type="email" placeholder="you@example.com"></div>
+      <div class="field"><label for="pickup">Pickup location</label><input id="pickup" name="pickup" placeholder="Where is the parcel collected?"></div>
+      <div class="field"><label for="destination">Destination</label><input id="destination" name="destination" placeholder="Where is it going?"></div>
+      <div class="field full"><label for="message">How can we help?</label><textarea id="message" name="message" required placeholder="Tell us about your delivery..."></textarea></div>
+      <button class="btn btn-blue field full" type="submit">Send enquiry via WhatsApp →</button>
+      <p class="fineprint">This form opens WhatsApp with your message prepared. It does not collect or store form submissions on a server.</p>
+    </form></div></section>
+
+    <section style="background:var(--paper);padding-top:65px;padding-bottom:70px"><div class="container"><div class="section-head"><span class="eyebrow">Helpful information</span><h2>Frequently asked questions</h2></div><div class="faq">
+      <details><summary>How do I get a tracking number?</summary><p>Contact the company to arrange your shipment. Once it is accepted and registered, ask the team for its tracking reference.</p></details>
+      <details><summary>Why is my tracking number not showing a result?</summary><p>Check that you entered the number correctly. If it still does not work, contact customer support. In this demo, tracking records exist only in the browser where they were created.</p></details>
+      <details><summary>Can I request a delivery quote?</summary><p>Yes. Send your pickup location, destination, parcel size or description and preferred date through the enquiry form or WhatsApp.</p></details>
+      <details><summary>Can I pay on this website?</summary><p>No. This website intentionally has no payment option. Confirm delivery arrangements and any payment instructions directly with the company.</p></details>
+    </div></div></section>
+
+    <div class="cta"><div class="container"><h2>Ready to send something?</h2><p>Speak with TRIPLEM DELIVERY COMPANY about your next delivery.</p><a href="https://wa.me/447883316371" target="_blank" rel="noopener" class="btn btn-primary">Chat with us on WhatsApp</a></div></div>
+  </main>
+  <footer><div class="container"><div class="footer-grid"><div><a class="brand" href="#home" style="color:white"><span class="brand-mark">TMD</span><span style="color:white">TRIPLEM DELIVERY<small style="color:#c4d2e2">COMPANY</small></span></a><p>Dependable delivery support with clear communication at every step.</p></div><div><h3>Quick links</h3><a href="#services">Our services</a><a href="#about">About us</a><a href="#track">Track shipment</a><a href="#contact">Contact</a></div><div><h3>Contact</h3><a href="mailto:triplem0147@gmail.com">triplem0147@gmail.com</a><a href="tel:+447883316371">+44 7883 316371</a><span>No 1234 at New York, United States</span></div></div><div class="footer-bottom"><span>© <span id="year"></span> TRIPLEM DELIVERY COMPANY. All rights reserved.</span><span>Delivering with care.</span></div></div></footer>
+  <a class="whatsapp" href="https://wa.me/447883316371" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">✆</a>
+
+  <script>
+    // DEMO TRACKING: records are stored in this browser's localStorage only.
+    // For real customer tracking, replace this with a secure server/database API.
+    const STORAGE_KEY = "triplem_demo_shipments_v1";
+    const $ = (id) => document.getElementById(id);
+    $("year").textContent = new Date().getFullYear();
+
+    $("menuBtn").addEventListener("click", () => {
+      const open = $("navLinks").classList.toggle("open");
+      $("menuBtn").setAttribute("aria-expanded", String(open));
+      $("menuBtn").textContent = open ? "✕" : "☰";
+    });
+    document.querySelectorAll("#navLinks a").forEach(link => link.addEventListener("click", () => {
+      $("navLinks").classList.remove("open");
+      $("menuBtn").setAttribute("aria-expanded", "false");
+      $("menuBtn").textContent = "☰";
+    }));
+
+    function getShipments() {
+      try { return JSON.parse(localStorage.getItem(STORAGE_KEY) || "{}"); }
+      catch { return {}; }
+    }
+    function saveShipments(data) { localStorage.setItem(STORAGE_KEY, JSON.stringify(data)); }
+
+    function makeTrackingNumber() {
+      const letters = "ABCDEFGHJKLMNPQRSTUVWXYZ";
+      let code = "";
+      for (let i = 0; i < 6; i++) code += letters[Math.floor(Math.random() * letters.length)];
+      return `TMD-${new Date().getFullYear()}-${code}`;
+    }
+
+    // Demo-only staff helper. Open browser console and run:
+    // createDemoShipment("Customer name", "Pickup city", "Destination city")
+    // It returns a tracking number you can share with the customer.
+    window.createDemoShipment = function(customer, origin, destination) {
+      const records = getShipments();
+      let tracking;
+      do { tracking = makeTrackingNumber(); } while (records[tracking]);
+      records[tracking] = {
+        customer: customer || "Customer",
+        origin: origin || "Shipment origin",
+        destination: destination || "Shipment destination",
+        status: "Shipment registered",
+        stage: 0,
+        updated: new Date().toLocaleString(),
+        history: ["Shipment registered", "Collected", "In transit", "Delivered"]
+      };
+      saveShipments(records);
+      return tracking;
+    };
+
+    function renderShipment(number) {
+      const record = getShipments()[number.toUpperCase().trim()];
+      if (!record) {
+        $("trackResult").innerHTML = '<div class="result-box"><strong>No shipment found.</strong><p>Please check the tracking number or contact our support team.</p></div>';
+        return;
+      }
+      const stages = ["Shipment registered", "Collected", "In transit", "Delivered"];
+      const current = Math.max(0, Math.min(3, Number(record.stage) || 0));
+      $("trackResult").innerHTML = `
+        <div class="result-box">
+          <div class="result-top"><div><strong>${number.toUpperCase()}</strong><div style="color:#64748b;font-size:.88rem;margin-top:5px">From: ${escapeHTML(record.origin)} → To: ${escapeHTML(record.destination)}</div></div><span class="status">${escapeHTML(record.status || stages[current])}</span></div>
+          <p style="margin:14px 0 0;color:#64748b;font-size:.88rem">Last updated: ${escapeHTML(record.updated || "Not available")}</p>
+          <div class="timeline">${stages.map((s,i)=>`<div class="step ${i<=current?'done':''}">${i<=current?'✓ ':''}${s}</div>`).join("")}</div>
+        </div>`;
+    }
+    function escapeHTML(value) {
+      return String(value).replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+    }
+    $("trackForm").addEventListener("submit", e => {
+      e.preventDefault();
+      const number = $("trackingInput").value.trim();
+      if (number) renderShipment(number);
+    });
+
+    $("contactForm").addEventListener("submit", e => {
+      e.preventDefault();
+      const data = new FormData(e.currentTarget);
+      const message = [
+        "Hello TRIPLEM DELIVERY COMPANY, I would like to make a delivery enquiry.",
+        `Name: ${data.get("name")}`,
+        `Phone: ${data.get("phone")}`,
+        `Email: ${data.get("email") || "Not provided"}`,
+        `Pickup: ${data.get("pickup") || "Not provided"}`,
+        `Destination: ${data.get("destination") || "Not provided"}`,
+        `Message: ${data.get("message")}`
+      ].join("\n");
+      window.open("https://wa.me/447883316371?text=" + encodeURIComponent(message), "_blank", "noopener");
+    });
+  </script>
+</body>
+</html>
